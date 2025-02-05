@@ -4,7 +4,7 @@
 1) npm install  
 2) npm run dev  
   
-## Зависимости  
+## Зависимости:  
 Redux toolkit  
 Axios  
 Clsx  
