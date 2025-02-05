@@ -1,0 +1,32 @@
+.messagesContainer
+  padding: 10px
+  height: calc( 100vh - 70px )
+  display: flex
+  flex-direction: column
+  gap: 20px
+  overflow-y: scroll
+
+.outgoing
+  margin-left: auto
+  .messageBody
+    background-color: #005B4B
+  .timestamp
+    text-align: right
+
+.incoming
+  margin-right: auto
+  .messageBody
+    background-color: #202C33
+  .timestamp
+    text-align: left
+
+.timestamp
+  font-size: 12px
+  margin-top: 5px
+  color: rgba(255, 255, 255, .5)
+
+.messageBody
+  padding: 10px
+  font-size: 16px
+  border-top-right-radius: 10px
+  border-bottom-left-radius: 10px
