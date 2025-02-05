@@ -39,6 +39,11 @@ export const LoginPage = () => {
 						chatId: phoneNumber,
 					})
 				)
+
+				localStorage.setItem('idInstance', idInstance)
+				localStorage.setItem('apiTokenInstance', apiTokenInstance)
+				localStorage.setItem('chatId', phoneNumber)
+
 				navigate('/chat')
 			}
 		} catch (error) {

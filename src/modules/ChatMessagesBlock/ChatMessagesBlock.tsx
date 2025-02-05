@@ -4,8 +4,6 @@ import axios from 'axios'
 import clsx from 'clsx'
 import moment from 'moment'
 
-import { useAppSelector } from '../../store/hooks'
-
 import { IChat } from '../../models'
 
 import styles from './ChatMessagesBlock.module.sass'
@@ -13,7 +11,9 @@ import styles from './ChatMessagesBlock.module.sass'
 export const ChatMessagesBlock = () => {
 	const [messages, setMessages] = useState<IChat[]>([])
 
-	const { apiTokenInstance, chatId, idInstance } = useAppSelector((state) => state.chatApi)
+	const idInstance = localStorage.getItem('idInstance')
+	const apiTokenInstance = localStorage.getItem('apiTokenInstance')
+	const chatId = localStorage.getItem('chatId')
 
 	const getChatHistory = async () => {
 		try {

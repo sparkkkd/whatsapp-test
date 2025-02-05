@@ -2,8 +2,6 @@ import { useState } from 'react'
 
 import axios from 'axios'
 
-import { useAppSelector } from '../../store/hooks'
-
 import { Button, TextArea } from '@gravity-ui/uikit'
 import { CaretRight } from '@gravity-ui/icons'
 
@@ -12,7 +10,9 @@ import styles from './ChatActionBar.module.sass'
 export const ChatActionBar = () => {
 	const [newMessage, setNewMessage] = useState<string>('')
 
-	const { apiTokenInstance, chatId, idInstance } = useAppSelector((state) => state.chatApi)
+	const idInstance = localStorage.getItem('idInstance')
+	const apiTokenInstance = localStorage.getItem('apiTokenInstance')
+	const chatId = localStorage.getItem('chatId')
 
 	const sendMessage = async () => {
 		try {
