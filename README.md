@@ -1,6 +1,6 @@
 # React + TypeScript + Vite + GreenApi  
 
-##Для запуска приложения:  
+## Для запуска приложения:  
 1) npm install  
 2) npm run dev  
   
