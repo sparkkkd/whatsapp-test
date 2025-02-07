@@ -10,7 +10,11 @@
 Redux toolkit  
 Axios  
 Clsx  
-Moment
+Moment  
+React-router-dom
+
+В кач-ве UI библиотеки используется "Gravity-ui" от яндекса.
+В кач-ве деплой инструмента - "gh-pages"
 
 ### P.S
 
