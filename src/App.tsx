@@ -39,8 +39,8 @@ function App() {
 	return (
 		<ThemeProvider theme='dark'>
 			<Container>
-				<Routes location={location.pathname}>
-					<Route path='/' element={<LoginPage />} />
+				<Routes location={location} key={location.pathname}>
+					<Route path='/' index element={<LoginPage />} />
 					<Route path='/chat' element={<ChatPage />} />
 				</Routes>
 			</Container>

@@ -13,7 +13,7 @@ import './theme.css'
 
 createRoot(document.getElementById('root')!).render(
 	<Provider store={store}>
-		<BrowserRouter basename='/'>
+		<BrowserRouter basename='/whatsapp-test'>
 			<App />
 		</BrowserRouter>
 	</Provider>
